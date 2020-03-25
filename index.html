@@ -43,7 +43,7 @@
 </head>
 <body>
 
-<a href="/explainer.html">
+<a href="#" onclick="onContinue()">
 <div class="container">
     <h1 id="text">Je bent gehackt.</h1>
 </div>
@@ -115,6 +115,10 @@
     changeText();
 
     setInterval(draw, 33);
+
+    function onContinue() {
+        document.getElementById("text").innerHTML = "No worries! Deze keer ben je niet echt gehackt. Toch worden duizenden mensen elk jaar op deze manier opgelicht. Daarom leer je morgen meer over cybercrime."
+    }
 </script>
 </body>
 
