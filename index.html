@@ -100,6 +100,7 @@
     }
 
     var timeout;
+    var secondTimeout;
 
     function changeText() {
         var elem = document.getElementById("text");
@@ -110,6 +111,13 @@
         timeout = setTimeout(function () {
             elem.innerHTML = "We hebben alle data van je computer getrokken. Wij beheren nu je foto's, je video's, je documenten en zelfs je bankrekening.";
         }, 2000);
+
+        clearTimeout(secondTimeout);
+
+        secondTimeout = setTimeout(function () {
+            elem.innerHTML = "No worries! Deze keer ben je niet echt gehackt. Toch worden duizenden mensen elk jaar op deze manier opgelicht. Daarom leer je morgen meer over cybercrime.";
+        }, 15000);
+
     }
 
     changeText();
